@@ -1,0 +1,44 @@
+{
+  "name": "task-management-backend",
+  "version": "1.0.0",
+  "description": "A full-featured to-do list API with user authentication, CRUD functionality, real-time chat, file uploads, and more.",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "NODE_ENV=development nodemon index.js",
+    "start-prod": "NODE_ENV=production nodemon index.js",
+    "test": "NODE_ENV=test jest --setupFiles dotenv/config"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "mongoDB",
+    "postgres",
+    "sockets.io",
+    "jest",
+    "JWT",
+    "redis."
+  ],
+  "author": "Murtaza Vadnagarwala",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-redis": "^7.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "redis": "^4.7.0",
+    "sequelize": "^6.37.3",
+    "socket.io": "^4.8.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
